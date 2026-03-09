@@ -1,0 +1,14 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/app/__pycache__/
+backend/*.db
+backend/*.log
+backend/.env
+backend/.env.port587
+
+# Node/Vite build artifacts (frontend is pre-built dist, keep it)
+node_modules/
+
+# OS
+.DS_Store
