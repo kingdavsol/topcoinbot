@@ -44,6 +44,7 @@ from .coingecko_service import CoinGeckoService
 from .encryption import encrypt_string, decrypt_string
 
 print("Starting Coinpicker application...")
+load_dotenv()
 print(f"DATABASE_URL environment variable: {'SET' if os.getenv('DATABASE_URL') else 'NOT SET'}")
 print(f"PORT environment variable: {os.getenv('PORT', 'NOT SET')}")
 
@@ -115,7 +116,6 @@ def get_infinity_service():
     return infinity_service
 
 
-load_dotenv()
 
 app = FastAPI(
     title="Crypto Trading Bot API",
